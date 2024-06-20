@@ -1,0 +1,147 @@
+:root {
+  --primary: #ff3c00;
+  --title: #121A27;
+  --text: #4a525d;
+  --border: #e4e4e4;
+  --section: #f9f9f9;
+  --background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+html,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100%;
+}
+
+.content {
+  padding: 24px 42px;
+}
+
+.content header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+aside {
+  background: var(--section);
+  height: 100%;
+  padding: 99px 48px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.product-card {
+  padding: 16px;
+  background-color: var(--section);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.product-card img {
+  height: 236px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-card button {
+  background: var(--primary);
+  color: var(--background);
+  padding: 8px;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+  transition: filter 0.5s ease;
+  margin-top: 8px;
+}
+
+.product-card button:hover {
+  filter: brightness(0.8);
+}
+
+.products-cart {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.products-cart .product-cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-cart .product-cart-item span {
+  color: var(--primary);
+}
+
+.cart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.25rem;
+}
+
+.summary div strong {
+  color: var(--primary);
+}
+
+.summary button {
+  height: 78px;
+  width: 100%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 16px;
+}
+
+.summary button:hover {
+  filter: brightness(0.8);
+}
